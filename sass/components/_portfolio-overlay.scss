@@ -1,0 +1,28 @@
+.project-overlay__wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-overlay__subtitle {
+    position: absolute;
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--whte-txt-color);
+    background-color: rgba(33, 150, 243, 0.9);
+    display: block;
+    width: 100%;
+    height: 294px;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+
+    transform: translateY(100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .project-overlay__wrapper:hover & {
+        transform: translateY(0);
+    }
+}
+
