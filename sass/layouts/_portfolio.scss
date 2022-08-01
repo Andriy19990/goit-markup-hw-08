@@ -1,15 +1,23 @@
 // фільтри 
 .portfolio__list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
-}
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    
+    
 
-.portfolio__item {
-    &:not(:last-child){
-    margin-right: 8px;
-}
+    @media screen and (min-width: 768px){
+    margin-bottom: 30px;
+    justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px){
+    margin-bottom: 50px;
+    justify-content: center;
+    }
 }
 
 .portfolio__button {
@@ -44,10 +52,30 @@
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 // проекти
+.project{
+    --items: 1;
+
+    @media screen and (min-width: 768px){
+    --items: 2;
+    }
+
+    @media screen and (min-width: 1200px){
+    --items: 3;
+    }
+}
+
 .project__item {
-    width: 370px;
+    width: 450px;
     background-color: var(--whte-txt-color);
     border: 1px solid #EEEEEE;
+
+    @media screen and (min-width: 768px){
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 370px;
+    }
 }
 
 .project__link {

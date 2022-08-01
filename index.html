@@ -15,12 +15,20 @@
     <!-- Підключення стилів -->
 <link rel="stylesheet" href="./css/main.min.css">
 </head>
-<body>
+<body data-body>
     <!-- Секція хедер -->
 <header class="header">
 <div class="container header-container">
 <nav class="header-nav">
     <a class="header-logo link" href="./index.html"> <span class="organization">Web</span>Studio</a>
+    
+    <button class="mobile-menu-btn" type="button" data-menu-button>
+        <svg width="24" height="16">
+            <use class="burger-menu-open" href="./images/icons.svg#burger-menu"></use>
+            <use class="burger-menu-close" href="./images/icons.svg#icon-close"></use>
+        </svg>
+    </button>
+
     <ul class="header-list list">
     <li class="header-list-item"><a class="header-link link current-link" href="./index.html">Студия</a></li>
     <li class="header-list-item"><a class="header-link link" href="./portfolio.html">Портфолио</a></li>
@@ -54,6 +62,52 @@
     <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
     </div>
 </section>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" data-menu>
+        <ul class="mobile-menu-nav list">
+            <li class="mobile-menu-nav-item">
+                <a class="link current-mobile" href="./index.html">Студия</a>
+            </li>
+    
+            <li class="mobile-menu-nav-item">
+                <a class="link" href="./portfolio.html">Портфолио</a>
+            </li>
+    
+            <li class="mobile-menu-nav-item">
+                <a class="link" href="">Контакты</a>
+            </li>
+        </ul>
+    
+        <ul class="mobile-menu-contacts list">
+            <li class="mobile-menu-contacts-item">
+                <a class="link accent" href="">+38 096 111 11 11</a>
+            </li>
+    
+            <li class="mobile-menu-contacts-item">
+                <a class="link" href="">info@devstudio.com</a>
+            </li>
+        </ul>
+    
+        <ul class="mobile-menu-socials list">
+            <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href="">Instagram</a>
+            </li>
+    
+            <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href="">Twitter</a>
+            </li>
+    
+            <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href="">Facebook</a>
+            </li>
+    
+            <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href="">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+
 <!-- Features -->
 <section class="features section">
     <div class="container">
@@ -392,6 +446,8 @@
     </form>
     </div>
 </footer>
+
+
 <!-- Модальне вікно -->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
@@ -443,5 +499,6 @@
         </div>
     </div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>

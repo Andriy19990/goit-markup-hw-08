@@ -18,12 +18,18 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
-<body>
+<body data-body>
     <!-- Секція хедер -->
     <header class="header">
         <div class="container header-container">
             <nav class="header-nav">
                 <a class="header-logo link" href="./index.html"> <span class="organization">Web</span>Studio</a>
+                <button class="mobile-menu-btn" type="button" data-menu-button>
+                    <svg width="24" height="16">
+                        <use class="burger-menu-open" href="./images/icons.svg#burger-menu"></use>
+                        <use class="burger-menu-close" href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
                 <ul class="header-list list">
                     <li class="header-list-item"><a class="header-link link" href="./index.html">Студия</a>
                     </li>
@@ -49,8 +55,54 @@
             </ul>
         </div>
     </header>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" data-menu>
+        <ul class="mobile-menu-nav list">
+            <li class="mobile-menu-nav-item">
+                <a class="link " href="./index.html">Студия</a>
+            </li>
+    
+            <li class="mobile-menu-nav-item">
+                <a class="link current-mobile" href="./portfolio.html">Портфолио</a>
+            </li>
+    
+            <li class="mobile-menu-nav-item">
+                <a class="link" href="">Контакты</a>
+            </li>
+        </ul>
+    
+        <ul class="mobile-menu-contacts list">
+            <li class="mobile-menu-contacts-item">
+                <a class="link accent" href="">+38 096 111 11 11</a>
+            </li>
+    
+            <li class="mobile-menu-contacts-item">
+                <a class="link" href="">info@devstudio.com</a>
+            </li>
+        </ul>
+    
+        <ul class="mobile-menu-socials list">
+            <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href="">Instagram</a>
+            </li>
+    
+            <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href="">Twitter</a>
+            </li>
+    
+            <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href="">Facebook</a>
+            </li>
+    
+            <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href="">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+
     <!-- Блок мейн -->
     <main>
+    
         <!-- фільтр -->
         <section class="portfolio section">
         <div class="container">
@@ -67,7 +119,7 @@
         <li class="project__item card-set__item">
             <a class="project__link link" href="">
             <div class="project-overlay__wrapper">
-            <img src="./images/projects/project-1.jpg" alt="Веб-сайт" width="370" height="294"/>
+            <img src="./images/projects/project-1.jpg" alt="Веб-сайт" width="450" height="294"/>
             <p class="project-overlay__subtitle">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
             исчерпывающие сведения о компании или частном лице.</p>
             </div>
@@ -80,7 +132,7 @@
         <li class="project__item card-set__item">
             <a class="project__link link" href="">
             <div class="project-overlay__wrapper">
-            <img src="./images/projects/project-2.jpg" alt="Дизайн" width="370" height="294"/>
+            <img src="./images/projects/project-2.jpg" alt="Дизайн" width="450" height="294"/>
             <p class="project-overlay__subtitle">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
             исчерпывающие сведения о компании или частном лице.</p>
             </div>
@@ -93,7 +145,7 @@
         <li class="project__item card-set__item">
             <a class="project__link link" href="">
             <div class="project-overlay__wrapper">
-            <img src="./images/projects/project-3.jpg" alt="Приложение" width="370" height="294"/>
+            <img src="./images/projects/project-3.jpg" alt="Приложение" width="450" height="294"/>
             <p class="project-overlay__subtitle">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
             исчерпывающие сведения о компании или частном лице.</p>
             </div>
@@ -106,7 +158,7 @@
         <li class="project__item card-set__item">
             <a class="project__link link" href="">
             <div class="project-overlay__wrapper">
-            <img src="./images/projects/project-4.jpg" alt="Маркетинг" width="370" height="294"/>
+            <img src="./images/projects/project-4.jpg" alt="Маркетинг" width="450" height="294"/>
             <p class="project-overlay__subtitle">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
             исчерпывающие сведения о компании или частном лице.</p>
             </div>
@@ -118,7 +170,7 @@
         <li class="project__item card-set__item">
             <a class="project__link link" href="">
             <div class="project-overlay__wrapper">
-            <img src="./images/projects/project-5.jpg" alt="Приложение" width="370" height="294"/>
+            <img src="./images/projects/project-5.jpg" alt="Приложение" width="450" height="294"/>
             <p class="project-overlay__subtitle">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все этопозволит посетителю получить
             исчерпывающие сведения о компании или частном лице.</p>
             </div>
@@ -130,7 +182,7 @@
         <li class="project__item card-set__item">
             <a class="project__link link" href="">
             <div class="project-overlay__wrapper">
-            <img src="./images/projects/project-6.jpg" alt="Веб-сайт" width="370" height="294"/>
+            <img src="./images/projects/project-6.jpg" alt="Веб-сайт" width="450" height="294"/>
             <p class="project-overlay__subtitle">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.Все этопозволит посетителю получить
                 исчерпывающие сведения о компании или частном лице.</p>
             </div>
@@ -142,7 +194,7 @@
         <li class="project__item card-set__item">
             <a class="project__link link" href="">
                 <div class="project-overlay__wrapper">
-            <img src="./images/projects/project-7.jpg" alt="Дизайн" width="370" height="294"/>
+            <img src="./images/projects/project-7.jpg" alt="Дизайн" width="450" height="294"/>
             <p class="project-overlay__subtitle">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.Все это позволит посетителю получить
                 исчерпывающие сведения о компании или частном лице.</p>
             </div>
@@ -154,7 +206,7 @@
         <li class="project__item card-set__item">
             <a class="project__link link" href="">
             <div class="project-overlay__wrapper">
-            <img src="./images/projects/project-8.jpg" alt="Маркетинг" width="370" height="294"/>
+            <img src="./images/projects/project-8.jpg" alt="Маркетинг" width="450" height="294"/>
             <p class="project-overlay__subtitle">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.Все это позволит посетителю получить
                 исчерпывающие сведения о компании или частном лице.</p>
             </div>
@@ -166,7 +218,7 @@
         <li class="project__item card-set__item">
             <a class="project__link link" href="">
             <div class="project-overlay__wrapper">
-            <img src="./images/projects/project-9.jpg" alt="Приложение" width="370" height="294"/>
+            <img src="./images/projects/project-9.jpg" alt="Приложение" width="450" height="294"/>
             <p class="project-overlay__subtitle">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.Все это позволит посетителю получить
                 исчерпывающие сведения о компании или частном лице.</p>
             </div>
@@ -244,5 +296,6 @@
             </form>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
