@@ -1,10 +1,10 @@
 .footer {
     background-color: #2F303A;
+    padding: 60px 0;
 
     @media screen and (max-width: 1199px){
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+    text-align: center;
+    }
 }
 
 .footer-container {
@@ -14,7 +14,7 @@
     @media screen and (min-width: 768px){
         display: flex;
         align-items: baseline;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     @media screen and (min-width: 1200px){
@@ -26,16 +26,15 @@
 .footer-tank {
     @media screen and (min-width: 480px){
     text-align: center;
-    padding-bottom: 60px;
     }
 
     @media screen and (min-width: 768px){
         text-align: center;
-        margin-right: 165px;
-    }
+    }  
 
     @media screen and (min-width: 1200px){
     margin-right: 70px;
+    
     }
 }
 
@@ -49,18 +48,15 @@
     color: var(--whte-txt-color);
     display: inline-block;
     margin-bottom: 20px;
+    
 
 
     @media screen and (min-width: 1200px){
     font-size: 26px;
     line-height: 1.19;
-    display: block;
-    align-items: center;
+    display: flex;
     }
 
-        @media screen and (max-width: 1199px){
-            text-align: center;
-        }
 }
 
 .address {
@@ -78,10 +74,6 @@
 .footer-link-address {
     line-height: 1.71;
     color: var(--whte-txt-color);
-
-    @media screen and (max-width: 1199px){
-        text-align: center;
-    }
 }
 
 .footer-contact {
@@ -91,6 +83,7 @@
 
     @media screen and (min-width: 1200px){
     margin-bottom: 9px;
+    display: flex;
     }
 }
 
@@ -107,15 +100,14 @@
             color: var(--accent-txt-color);
         }
 
-    @media screen and (max-width: 1199px){
-    text-align: center;
-    }
 }
 
 .footer-social {
     width: 206px;
     height: 80px;
     margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
     
     @media screen and (min-width: 768px){
         margin: 0;
@@ -174,11 +166,8 @@
     fill: var(--whte-txt-color);
 }
 
-
 .footer-form {
-    margin-top: 60px;
     display: block;
-    
 }
 
 .footer-form-title {
@@ -189,10 +178,12 @@
     margin-bottom: 20px;
 
     @media screen and (max-width: 1199px){
+        margin-top: 60px;
         text-align: center;
     }
 
         @media screen and (min-width: 1200px){
+            margin-top: 0;
             margin-bottom: 0;
         }
 }
